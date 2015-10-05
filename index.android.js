@@ -15,10 +15,27 @@ var DrawerLayoutAndToolbarExample = React.createClass({
   render: function() {
     return (
       <View>
-        <Text>sample</Text>
+        <DrawerLayout />
+        <Toolbar />
       </View>
     );
   }
 });
+
+var DrawerLayout = React.createClass({
+  render: function() {
+    return (
+      <Text>DrawerLayout</Text>
+    );
+  }
+});
+
+var Toolbar = React.createClass({
+  render: function() {
+    return (
+      <Text>Toolbar</Text>
+    );
+  }
+})
 
 AppRegistry.registerComponent('DrawerLayoutAndToolbarExample', () => DrawerLayoutAndToolbarExample);
